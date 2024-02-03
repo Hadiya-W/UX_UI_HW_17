@@ -1,0 +1,22 @@
+
+.grid-container{
+    display:inline-grid;
+    column-gap: 99px;
+    vertical-align: top;
+}
+
+
+
+nav{
+    width:73%;
+    padding:1%;
+}
+
+.navigation{
+    background-color: #183650;
+}
+
+.hero_image{
+    background-color:#0A1426 ;
+    width: auto;
+}
