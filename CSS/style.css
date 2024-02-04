@@ -1,22 +1,134 @@
-
-.grid-container{
-    display:inline-grid;
-    column-gap: 99px;
-    vertical-align: top;
+/*typography*/
+.navi {
+    font-family: "Inria Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
 }
 
-
-
-nav{
-    width:73%;
-    padding:1%;
+.display {
+    font-family: "Julius Sans One";
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-.navigation{
+.subtitle {
+    font-family: "Inria Serif";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.text-body {
+    font-family: "Junge";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+body {
     background-color: #183650;
+
 }
 
-.hero_image{
-    background-color:#0A1426 ;
-    width: auto;
+.navigation {
+    background-color: #183650;
+    display: flex;
+    height: 58px;
+    width: 100%;
+    position: fixed;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 99px;
+    width: 73%;
+    color: white;
+}
+
+.grid-item1 {
+    grid-column: 1;
+}
+
+.grid-item2 {
+    grid-column: 2;
+}
+
+.grid-item3 {
+    grid-column: 3;
+}
+
+.grid-item4 {
+    grid-column: 4;
+}
+
+
+.hero {
+    display: flex;
+    width: 100%;
+    height: 1024px;
+    justify-content: center;
+    align-content: center;
+    background-image: url("../Images/Hero-Image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero_image {
+    grid-row: 1;
+    background-color: #0A1426;
+    justify-content: right;
+    width: 100%;
+    float: right;
+}
+
+.profile {
+    float: right
+}
+
+#splash {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    top: 200px;
+    left: 110px;
+    color: white;
+    width: 400px;
+    height: 400px;
+}
+
+footer {
+    width: 100%;
+    height: 433px;
+    background-image: url("../Images/Footer\ background.png");
+    background-repeat: no-repeat;
+
+}
+
+.footer-contents{
+    display: grid;
+    grid-template-rows:1.5fr 1fr 1fr;
+}
+.contact-info{
+    color: white;
+    grid-row: 2;
+}
+.right{
+    grid-row: 3;
+    color:white;
+   justify-self: end;
+    margin-top: 99px;
 }
